@@ -1,0 +1,6 @@
+D:\GitHub\GameForIndigoKids\Assets\Plugins\Model\Model.dll
+D:\GitHub\GameForIndigoKids\Assets\Plugins\Model\Model.pdb
+D:\GitHub\GameForIndigoKids\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\GitHub\GameForIndigoKids\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\GitHub\GameForIndigoKids\Model\obj\Debug\Model.dll
+D:\GitHub\GameForIndigoKids\Model\obj\Debug\Model.pdb
