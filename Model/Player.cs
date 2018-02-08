@@ -1,8 +1,22 @@
-﻿namespace Model
+﻿using System.ComponentModel;
+
+namespace Model
 {
-    public class Player
+    public class Player : INotifyPropertyChanged
     {
-        public int Score { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private int score;
+        public int Score
+        {
+            get { return score; }
+            set
+            {
+                score = value;
+                OnPropertyChanged("Score");
+            }
+        }
+
         public Alphabet Alphabet { get; set; }
         public UniqueWords UniqueWords { get; set; }
 
@@ -11,6 +25,11 @@
             Score = score;
             Alphabet = alphabet;
             UniqueWords = uniqueWords;
+        }
+
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
     }
 }
