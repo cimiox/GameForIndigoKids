@@ -1,6 +1,4 @@
 ﻿using Model;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHandler : ScriptableObject
@@ -11,6 +9,34 @@ public class PlayerHandler : ScriptableObject
     private int MinWordsLength;
 
     public Player Player { get; set; }
+
+    public int Scores
+    {
+        get
+        {
+            return Player.Score;
+        }
+        set
+        {
+            Player.Score = value;
+        }
+    }
+
+    public UniqueWords UniqueWords
+    {
+        get
+        {
+            return Player.UniqueWords;
+        }
+    }
+
+    public Alphabet Alphabet
+    {
+        get
+        {
+            return Player.Alphabet;
+        }
+    }
 
     public void Intialize(TextAsset textAsset)
     {

@@ -17,8 +17,8 @@ namespace Model
             }
         }
 
-        public Alphabet Alphabet { get; set; }
-        public UniqueWords UniqueWords { get; set; }
+        public Alphabet Alphabet { get; private set; }
+        public UniqueWords UniqueWords { get; private set; }
 
         public Player(int score, Alphabet alphabet, UniqueWords uniqueWords)
         {
