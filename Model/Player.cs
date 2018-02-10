@@ -6,6 +6,18 @@ namespace Model
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private int attempts;
+        public int Attempts
+        {
+            get { return attempts; }
+            set
+            {
+                attempts = value;
+                OnPropertyChanged("Attempts");
+            }
+        }
+
+
         private int score;
         public int Score
         {
@@ -17,13 +29,12 @@ namespace Model
             }
         }
 
-        public Alphabet Alphabet { get; private set; }
         public UniqueWords UniqueWords { get; private set; }
 
-        public Player(int score, Alphabet alphabet, UniqueWords uniqueWords)
+        public Player(int attempts, int score, UniqueWords uniqueWords)
         {
+            Attempts = attempts;
             Score = score;
-            Alphabet = alphabet;
             UniqueWords = uniqueWords;
         }
 

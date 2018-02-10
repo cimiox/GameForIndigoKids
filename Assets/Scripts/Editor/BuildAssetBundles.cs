@@ -2,6 +2,9 @@
 
 public class BuildAssetBundles
 {
+    /// <summary>
+    /// Создает assetBundle по заданному пути
+    /// </summary>
     [MenuItem("Window/Build AssetBundles")]
     private static void CreateAssetBundles()
     {

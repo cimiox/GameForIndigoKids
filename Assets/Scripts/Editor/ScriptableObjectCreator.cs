@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class ScriptableObjectCreator
 {
+    /// <summary>
+    /// Создает ScriptableObject
+    /// </summary>
     [MenuItem("Assets/Create/PlayerHandler")]
     public static void CreateAsset()
     {

@@ -1,12 +1,13 @@
-﻿using System.Collections.ObjectModel;
+﻿using Model.Letters;
+using System.Collections.ObjectModel;
 
 namespace Model
 {
     public class Alphabet
     {
-        public ObservableCollection<Letter> Letters { get; set; }
+        public ObservableCollection<KeybordLetter> Letters { get; set; }
 
-        public Letter this[int index]
+        public KeybordLetter this[int index]
         {
             set
             {
@@ -18,7 +19,7 @@ namespace Model
             }
         }
 
-        public Alphabet(ObservableCollection<Letter> letters)
+        public Alphabet(ObservableCollection<KeybordLetter> letters)
         {
             Letters = letters;
         }

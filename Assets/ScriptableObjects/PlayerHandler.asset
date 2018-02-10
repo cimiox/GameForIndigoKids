@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e159985a8576ca4ba151f0bcbb89555, type: 3}
   m_Name: PlayerHandler
   m_EditorClassIdentifier: 
-  StartScores: 5
-  MinWordsLength: 4
+  StartAttempts: 10
+  MinWordsLength: 10

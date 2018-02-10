@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222027042772949560}
   - component: {fileID: 114154508839232608}
   - component: {fileID: 114806773668049138}
+  - component: {fileID: 114980509561681430}
   m_Layer: 5
   m_Name: KeybordLetter
   m_TagString: Untagged
@@ -147,6 +148,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114980509561681430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861673564791652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9ddcfb2bdde764ca29193867b52466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222027042772949560
 CanvasRenderer:
   m_ObjectHideFlags: 1

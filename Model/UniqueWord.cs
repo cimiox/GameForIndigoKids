@@ -1,10 +1,13 @@
-﻿namespace Model
+﻿using Model.Letters;
+using System.Collections.Generic;
+
+namespace Model
 {
     public class UniqueWord
     {
-        public string Word { get; set; }
+        public List<UniqueWordLetter> Word { get; set; }
 
-        public UniqueWord(string word)
+        public UniqueWord(List<UniqueWordLetter> word)
         {
             Word = word;
         }

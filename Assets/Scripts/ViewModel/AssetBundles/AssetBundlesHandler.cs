@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Обработчик для работы с assetbundles 
+/// </summary>
 [Serializable]
 public class AssetBundlesHandler
 {

@@ -1,10 +1,13 @@
 ﻿using Model;
 using UnityEngine;
 
+/// <summary>
+/// ViewModel для Player, хранит в себе Player и стартовые значения
+/// </summary>
 public class PlayerHandler : ScriptableObject
 {
-    [SerializeField, Tooltip("Стартовое количество попыток")]
-    private int StartScores;
+    [Tooltip("Стартовое количество попыток")]
+    public int StartAttempts;
     [SerializeField, Tooltip("Минимальная длина слов")]
     private int MinWordsLength;
 
@@ -12,36 +15,25 @@ public class PlayerHandler : ScriptableObject
 
     public int Scores
     {
-        get
-        {
-            return Player.Score;
-        }
-        set
-        {
-            Player.Score = value;
-        }
+        get { return Player.Score; }
+        set { Player.Score = value; }
+    }
+
+    public int Attempts
+    {
+        get { return Player.Attempts; }
+        set { Player.Attempts = value; }
     }
 
     public UniqueWords UniqueWords
     {
-        get
-        {
-            return Player.UniqueWords;
-        }
-    }
-
-    public Alphabet Alphabet
-    {
-        get
-        {
-            return Player.Alphabet;
-        }
+        get { return Player.UniqueWords; }
     }
 
     public void Intialize(TextAsset textAsset)
     {
         var uniqueWordsFactory = new UniqueWordsFactory();
-        var alphabetFactory = new EnglishAlphabetFactory();
-        Player = new Player(StartScores, alphabetFactory.CreateAlphabet(), uniqueWordsFactory.CreateUniqueWords(textAsset, MinWordsLength));
+
+        Player = new Player(StartAttempts, 0, uniqueWordsFactory.CreateUniqueWords(textAsset, MinWordsLength));
     }
 }
