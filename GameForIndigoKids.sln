@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForIndigoKids", "GameForIndigoKids.csproj", "{257B648E-1F76-E115-87F0-F6AC34FD54E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForIndigoKids.Editor", "GameForIndigoKids.Editor.csproj", "{1517B245-83E1-6462-8CD7-CA1DFF826568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BD931920-73B1-4D4A-AD76-2DD83243354E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{257B648E-1F76-E115-87F0-F6AC34FD54E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257B648E-1F76-E115-87F0-F6AC34FD54E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257B648E-1F76-E115-87F0-F6AC34FD54E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257B648E-1F76-E115-87F0-F6AC34FD54E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1517B245-83E1-6462-8CD7-CA1DFF826568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1517B245-83E1-6462-8CD7-CA1DFF826568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1517B245-83E1-6462-8CD7-CA1DFF826568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1517B245-83E1-6462-8CD7-CA1DFF826568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD931920-73B1-4D4A-AD76-2DD83243354E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD931920-73B1-4D4A-AD76-2DD83243354E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD931920-73B1-4D4A-AD76-2DD83243354E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD931920-73B1-4D4A-AD76-2DD83243354E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
